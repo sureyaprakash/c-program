@@ -1,0 +1,11 @@
+Area of triangle
+#include <stdio.h>
+void main(){
+    int h,b,area;
+    printf("Enter the base:");
+    scanf("%d",&b);
+    printf("Enter the height:");
+    scanf("%d",&h);
+    area=(0.5)*b*h;
+    printf("Area:%d\n",area);
+}

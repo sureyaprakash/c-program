@@ -1,0 +1,10 @@
+Area of circul
+#include <stdio.h>
+void main(){
+    int pi,r,area;
+    pi=3.14;
+    printf("Enter the radius:");
+    scanf("%d",&r);
+    area=pi*r*r;
+    printf("Area:%d\n",area);
+}
