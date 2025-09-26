@@ -1,0 +1,21 @@
+#include <stdio.h>
+int main() {
+    int Size, i, a[100];
+    int Even_Sum = 0, Odd_Sum = 0;
+    printf("Please Enter the Size of the Array: ");
+    scanf("%d", &Size);
+    printf("Please Enter the Array Elements:\n");
+    for(i = 0; i < Size; i++) {
+        scanf("%d", &a[i]);
+    }
+    for(i = 0; i < Size; i++) {
+        if(a[i] % 2 == 0) {
+            Even_Sum += a[i];
+        } else {
+            Odd_Sum += a[i];
+        }
+    }
+    printf("Sum of Even Numbers = %d\n", Even_Sum);
+    printf("Sum of Odd Numbers = %d\n", Odd_Sum);
+    return 0;
+}
