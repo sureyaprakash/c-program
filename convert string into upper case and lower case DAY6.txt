@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <ctype.h>
+#include <string.h>  // Needed for strcspn()
+
+int main() {
+    char str[100];
+    int i;
+
+    printf("Enter a string: ");
+    fgets(str, sizeof(str), stdin);
+
+    // Remove newline character from fgets input
+    str[strcspn(str, "\n")] = '\0';
+
+    // Convert to Uppercase and print
+    printf("Uppercase: ");
+    for (i = 0; str[i] != '\0'; i++) {
+        printf("%c", toupper((unsigned char)str[i]));
+    }
+    printf("\n");
+
+    // Convert to Lowercase and print
+    printf("Lowercase: ");
+    for (i = 0; str[i] != '\0'; i++) {
+        printf("%c", tolower((unsigned char)str[i]));
+    }
+    printf("\n");
+
+    return 0;
+}
